@@ -13,6 +13,7 @@ class Test_001_Login:
     username = ReadConfig.getUseremail()
     password = ReadConfig.getPassword()
 
+
     def test_login(self, setup):
         self.driver = setup
         self.driver.get(self.baseurl)
@@ -24,16 +25,23 @@ class Test_001_Login:
         time.sleep(5)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()
-        # act_title = self.driver.title
+        time.sleep(60)
+        act_title = self.driver.title
+        assert act_title == "Home - Evernote"
+        if act_title == "Home - Evernote":
+            self.lp.clickAddNote()
+        else:
+            self.driver.close()
+
         #
         # if act_title == "Home - Evernote":
         #     assert True
         #     #self.driver.close()
         # else:
-        #     self.driver.save_screenshot(".//Screenshot/" + "evernote001_png")
+        #     self.driver.save_screenshot(".//Screenshots/" + "evernote001_png")
         #     #self.driver.close()
         #     assert False
-       # self.lp.clickAddNote()
+        #self.lp.clickAddNote()
 
 
 

@@ -8,7 +8,7 @@ class LoginPage:
     textbox_password_id = "password"
     button_login_id = "loginButton"
     button_loginDashboard_xpath = "//nav[@aria-label='Utility navigation']//a[normalize-space()='Log In']"
-    button_addNote_id = "qa-HOME_NOTE_WIDGET_CREATE_NOTE"
+    button_addNote_xpath = "//*[name()='circle' and contains(@cx,'12')]"
 
     def __init__(self, driver):
         self.driver = driver
@@ -35,7 +35,11 @@ class LoginPage:
         self.driver.find_element(By.XPATH, self.button_loginDashboard_xpath).click()
 
     def clickAddNote(self):
-        self.driver.find_element(By.ID, self.clickAddNote).click()
+        self.driver.find_element(By.XPATH, self.button_addNote_xpath).click()
+        #self.driver.find_element(By.XPATH, self.button_addNote_xpath).click()
+
+
+
 
 
 
