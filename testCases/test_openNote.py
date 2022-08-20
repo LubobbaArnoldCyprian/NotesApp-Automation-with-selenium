@@ -8,6 +8,7 @@ from utilities.readProperties import ReadConfig
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 # LoginPage = lp
 class Test_003_openNote:
     baseurl = ReadConfig.getApplicationURL()
