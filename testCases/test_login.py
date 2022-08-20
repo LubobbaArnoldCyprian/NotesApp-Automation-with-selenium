@@ -33,15 +33,6 @@ class Test_001_Login:
         else:
             self.driver.close()
 
-        #
-        # if act_title == "Home - Evernote":
-        #     assert True
-        #     #self.driver.close()
-        # else:
-        #     self.driver.save_screenshot(".//Screenshots/" + "evernote001_png")
-        #     #self.driver.close()
-        #     assert False
-        #self.lp.clickAddNote()
 
 
 

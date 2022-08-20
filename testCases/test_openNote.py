@@ -44,22 +44,6 @@ class Test_003_openNote:
 
 
 
-        # act_title = self.driver.title
-        # assert act_title == "Home - Evernote"
-        # if act_title == "Home - Evernote":
-        #     time.sleep(20)
-        #     self.lp.clickAddNote()
-        # else:
-        #     self.driver.close()
-
-        #Opening created note
-    #
-    # def test_OpenNote(self, setup):
-    #     self.driver = setup
-    #     self.op = OpenNote(self.driver)
-    #     time.sleep(5)
-    #     self.op.openNotes()
-    #     self.op.clickSpecificNote()
 
 
 
@@ -68,14 +52,6 @@ class Test_003_openNote:
 
 
 
-
-
-
-        # time.sleep(10)
-        # self.lgo.btnAccountLogout()
-        # self.lgo.btnLogout()
-        # time.sleep(5)
-        # self.lgo.btnExit()
 
 
 

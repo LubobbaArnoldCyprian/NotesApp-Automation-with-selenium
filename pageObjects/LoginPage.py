@@ -36,7 +36,6 @@ class LoginPage:
 
     def clickAddNote(self):
         self.driver.find_element(By.XPATH, self.button_addNote_xpath).click()
-        #self.driver.find_element(By.XPATH, self.button_addNote_xpath).click()
 
 
 

@@ -53,42 +53,6 @@ class Test_001_writeNote:
         self.lgo.btnExit()
         self.driver.close()
 
-        #Opening created note
-
-    # def test_OpenNote(self, setup):
-    #     self.driver = setup
-    #     self.driver.get(self.baseurl)
-    #     self.driver.maximize_window()
-    #     self.lp = LoginPage(self.driver)
-    #     self.lp.clickLoginDashboard()
-    #     self.lp.setUserName(self.username)
-    #     self.lp.btnContinue()
-    #     time.sleep(5)
-    #     self.lp.setPassword(self.password)
-    #     self.lp.clickLogin()
-    #     time.sleep(30)
-    #     act_title = self.driver.title
-    #     assert act_title == "Home - Evernote"
-    #     if act_title == "Home - Evernote":
-    #         time.sleep(10)
-    #         self.lp.clickAddNote()
-    #     else:
-    #         self.driver.close()
-
-
-        # time.sleep(10)
-        # self.lgo.btnAccountLogout()
-        # self.lgo.btnLogout()
-        # time.sleep(5)
-        # self.lgo.btnExit()
-
-
-
-
-
-
-
-
 
 
 
