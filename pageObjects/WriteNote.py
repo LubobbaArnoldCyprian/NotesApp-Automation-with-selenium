@@ -13,15 +13,16 @@ class CreateNote:
     button_accountLogout_xpath = "//div[@id='qa-USER_PORTRAIT']"   #doubt
     button_logout_id = "qa-ACCOUNT_DROPDOWN_LOGOUT"
     button_confirmExit_iq = "qa-LOGOUT_CONFIRM_DIALOG_SUBMIT"
+    #note_tabs_id = "react-tabs-15"
 
     def __init__(self, driver):
         self.driver = driver
 
-    def setTitle(self):
+    def setTitle(self,title):
         note_title_field = self.driver.find_element(By.XPATH, self.textbox_title_xpath)
         note_title_field.click()
         note_title_field.clear()
-        note_title_field.send_keys("This is an ever note test note")
+        note_title_field.send_keys(title)
         note_title_field.send_keys(Keys.RETURN)
 
     def setMessage(self, message):
@@ -37,13 +38,14 @@ class CreateNote:
         self.driver.find_element(By.ID, self.button_logout_id).click()
 
     def selectIframe(self):
-        #frame1 = self.driver.find_element(By.ID, self.iframe_id)
         frame2 = self.driver.find_element(By.XPATH, self.iframe_xpath)
-        #self.driver.switch_to.frame(frame1)
         self.driver.switch_to.frame(frame2)
 
     def btnExit(self):
         self.driver.find_element(By.ID, self.button_confirmExit_iq).click()
+
+
+
 
 
 
