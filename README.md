@@ -12,11 +12,11 @@ Page Object model is an object design pattern in Selenium, where web pages are r
 
  ## **Why Page Object model?**
 
-It is useful in reducing code duplication and improves test case maintenance. 
+* It is useful in reducing code duplication and improves test case maintenance. 
 
-Helps with reusing code 
+* Helps with reusing code 
 
-It eases readability and reliability of scripts 
+* It eases readability and reliability of scripts 
 
  ### **Initial Setup:**
 
@@ -50,13 +50,13 @@ After installing homebrew run this command
 
 ### **Libraries added.** 
 
-Pytest 
+* Pytest 
 
-Pytest-html 
+* Pytest-html 
 
-Pytest-xdist 
+* Pytest-xdist 
 
-Allure-pytest 
+* Allure-pytest 
 
  
 
@@ -68,21 +68,21 @@ Python
 
 ## **Tools used.** 
 
-Selenium 
+* Selenium 
 
-Pycharm  CE 
+* Pycharm  CE 
 
  
 
 ## **Tests covered.** 
 
-Unsuccessful login using e-mail 
+* Unsuccessful login using e-mail 
 
-Successful login using email 
+* Successful login using email 
 
-Login and write a note followed by a logout 
+* Login and write a note followed by a logout 
 
-login again and open the created note. 
+* login again and open the created note. 
 
  
 
